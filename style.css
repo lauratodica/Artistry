@@ -1,5 +1,11 @@
 body {
     background-color: rgba(13, 41, 41, 0.7);
+    margin-bottom: 50px;
+}
+
+i {
+    font-size: 1.3em;
+    padding: 0 10px;
 }
 
 .bg {
