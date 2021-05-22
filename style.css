@@ -60,6 +60,8 @@ i {
     text-align: center;
     background-color: rgba(13, 41, 41, 0.7);
     color: rgba(245, 245, 245, 0.7);
+    border: none;
+
 }
 
 .card {
