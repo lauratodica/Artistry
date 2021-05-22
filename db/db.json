@@ -1,0 +1,95 @@
+{
+	"posts": [ { "id": 1, "title": "json-server", "author": "typicode" } ],
+	"comments": [ { "id": 1, "body": "some comment", "postId": 1 } ],
+	"profile": { "name": "typicode" },
+	"hoodies": [
+		{
+			"id": 1,
+			"name": "Sweater 1",
+			"description": "100% Wool",
+			"image": "../Img/cl1.jpg",
+			"price": 20,
+			"amount": 5
+		},
+		{
+			"id": 2,
+			"name": "Sweater 2",
+			"description": "100% Cotton",
+			"image": "../Img/cl2.jpg",
+			"price": 10,
+			"amount": 3
+		},
+		{
+			"id": 3,
+			"name": "Sweater 2",
+			"description": "100% Cotton",
+			"image": "../Img/cl2.jpg",
+			"price": 10,
+			"amount": 3
+		},
+		{
+			"id": 4,
+			"name": "Sweater 2",
+			"description": "100% Cotton",
+			"image": "../Img/cl2.jpg",
+			"price": 10,
+			"amount": 3
+		},
+		{
+			"id": 5,
+			"name": "Sweater 2",
+			"description": "100% Cotton",
+			"image": "../Img/cl2.jpg",
+			"price": 10,
+			"amount": 3
+		},
+		{
+			"id": 6,
+			"name": "Sweater 2",
+			"description": "100% Cotton",
+			"image": "../Img/cl2.jpg",
+			"price": 10,
+			"amount": 3
+		},
+		{
+			"id": 7,
+			"name": "Sweater 2",
+			"description": "100% Cotton",
+			"image": "../Img/cl2.jpg",
+			"price": 10,
+			"amount": 3
+		},
+		{
+			"id": 8,
+			"name": "Sweater 2",
+			"description": "100% Cotton",
+			"image": "../Img/cl2.jpg",
+			"price": 10,
+			"amount": 3
+		},
+		{
+			"id": 9,
+			"name": "Sweater 2",
+			"description": "100% Cotton",
+			"image": "../Img/cl2.jpg",
+			"price": 10,
+			"amount": 3
+		},
+		{
+			"id": 10,
+			"name": "Sweater 2",
+			"description": "100% Cotton",
+			"image": "../Img/cl2.jpg",
+			"price": 10,
+			"amount": 3
+		},
+		{
+			"id": 11,
+			"name": "Sweater 2",
+			"description": "100% Cotton",
+			"image": "../Img/cl2.jpg",
+			"price": 10,
+			"amount": 3
+		}
+	]
+}
