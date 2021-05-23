@@ -5,15 +5,15 @@
 	"hoodies": [
 		{
 			"id": 1,
-			"name": "Sweater 1",
+			"name": "Sweater a",
 			"description": "100% Wool",
 			"image": "../Img/cl1.jpg",
 			"price": 20,
-			"amount": 5
+			"amount": 0
 		},
 		{
 			"id": 2,
-			"name": "Sweater 2",
+			"name": "Sweater b",
 			"description": "100% Cotton",
 			"image": "../Img/cl2.jpg",
 			"price": 10,
@@ -21,75 +21,76 @@
 		},
 		{
 			"id": 3,
-			"name": "Sweater 2",
+			"name": "Sweater c",
 			"description": "100% Cotton",
 			"image": "../Img/cl2.jpg",
-			"price": 10,
+			"price": 15,
 			"amount": 3
 		},
 		{
 			"id": 4,
-			"name": "Sweater 2",
+			"name": "Sweater d",
 			"description": "100% Cotton",
 			"image": "../Img/cl2.jpg",
-			"price": 10,
+			"price": 30,
 			"amount": 3
 		},
 		{
 			"id": 5,
-			"name": "Sweater 2",
+			"name": "Sweater e",
 			"description": "100% Cotton",
 			"image": "../Img/cl2.jpg",
-			"price": 10,
+			"price": 40,
 			"amount": 3
 		},
 		{
 			"id": 6,
-			"name": "Sweater 2",
+			"name": "Sweater f",
 			"description": "100% Cotton",
 			"image": "../Img/cl2.jpg",
-			"price": 10,
+			"price": 5,
 			"amount": 3
 		},
 		{
 			"id": 7,
-			"name": "Sweater 2",
+			"name": "Sweater g",
 			"description": "100% Cotton",
 			"image": "../Img/cl2.jpg",
-			"price": 10,
+			"price": 16,
 			"amount": 3
 		},
 		{
 			"id": 8,
-			"name": "Sweater 2",
+			"name": "Sweater h",
 			"description": "100% Cotton",
 			"image": "../Img/cl2.jpg",
-			"price": 10,
+			"price": 29,
 			"amount": 3
 		},
 		{
 			"id": 9,
-			"name": "Sweater 2",
+			"name": "Sweater i",
 			"description": "100% Cotton",
 			"image": "../Img/cl2.jpg",
-			"price": 10,
+			"price": 43,
 			"amount": 3
 		},
 		{
 			"id": 10,
-			"name": "Sweater 2",
+			"name": "Sweater j",
 			"description": "100% Cotton",
 			"image": "../Img/cl2.jpg",
-			"price": 10,
+			"price": 80,
 			"amount": 3
 		},
 		{
 			"id": 11,
-			"name": "Sweater 2",
+			"name": "Sweater k",
 			"description": "100% Cotton",
 			"image": "../Img/cl2.jpg",
-			"price": 10,
+			"price": 16,
 			"amount": 3
 		}
 	]
 }
+	

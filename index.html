@@ -56,7 +56,7 @@
                 <a class="navbar-brand txt" href=#>PRODUCTS</a>
                 <a class="navbar-brand txt" href=#>CONTACTS</a>
             </div>
-        <form class="d-flex">
+        <form class="d-flex search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
@@ -64,17 +64,14 @@
     </nav>
 
 <!-- dropdown de sortare dupa pret -->
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-        FILTER BY
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Price low to high</a></li>
-            <li><a class="dropdown-item" href="#">Price high to low</a></li>
-            <li><a class="dropdown-item" href="#">Name A - Z</a></li>
-            <li><a class="dropdown-item" href="#">Name Z - A</a></li>
-        </ul>
-    </div>   
+    <label>Sort by
+        <select class="sortBy form-select form-select-sm" name="sortBy" aria-label=".form-select-sm example">
+            <option value="ascPrice">Price low to high</option>
+            <option value="descPrice">Price high to low</option>
+            <option value="ascName">Name A - Z</option>
+            <option value="descName">Name Z - A</option>
+        </select>
+    </label>
 
 
     <div class=container>
@@ -88,53 +85,10 @@
             <a href="#" class="list-group-item list-group-item-action">Jeans</a>
         </div>
         <!-- grid cu produse -->
-        <div class="row row-cols-1 row-cols-md-2 g-4 products-align">
-            <div class="col">
-              <div class="card">
-                  <div class="text-center">
-                    <img src="Img/cl1.jpg" class="card-img-top" alt="...">
-                  </div>
-                <div class="card-body">
-                  <h5 class="card-title">Sweater...</h5>
-                  <p class="card-text">Price</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                    <div class="text-center">
-                        <img src="Img/cl2.jpg" class="card-img-top" alt="...">
-                    </div>
-                <div class="card-body">
-                  <h5 class="card-title">Sweater...</h5>
-                  <p class="card-text">Price</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="text-center">
-                    <img src="Img/cl3.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Sweater...</h5>
-                  <p class="card-text">Price</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="text-center">
-                    <img src="Img/cl4.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Sweater...</h5>
-                  <p class="card-text">Price</p>
-                </div>
-              </div>
-            </div>
-          </div>
-    </div>
+        <div class = "productsList">
+
+        </div>
+    </div>  
 
 <!-- pagination -->
     <nav aria-label="Page navigation example">
@@ -150,18 +104,17 @@
         </li>
         </ul>
     </nav>
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          Number of items
-        </button>
-        <ul class="dropdown-menu itemsOnPage" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">4</a></li>
-          <li><a class="dropdown-item" href="#">8</a></li>
-          <li><a class="dropdown-item" href="#">12</a></li>
-          <li><a class="dropdown-item" href="#">20</a></li>
-        </ul>
-      </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>    
-      <script src="script.js"></script>
+
+    <label>Items Per page
+        <select class="perPage form-select form-select-sm" name="perPage" aria-label=".form-select-sm example">
+            <option selected value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+        </select>
+    </label>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>    
+    <script src="script.js"></script>
 </body>
 </html>
