@@ -100,3 +100,22 @@ i {
     margin-left: 18px;
     letter-spacing: 0.1em;
 }
+
+.sortItems, .items {
+    display: block;
+    width: 20%;
+    margin: 20px auto 40px;
+    color: whitesmoke;
+}
+
+.sortBy, .perPage {
+    margin-top:5px;
+    color:rgba(13, 41, 41, 0.6);
+    font-weight: bold;
+    background-color: rgba(245, 245, 245, 0.6);
+    border: none;
+    }
+
+.perPage {
+    width: 55%;
+}
