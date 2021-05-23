@@ -124,7 +124,7 @@
 			"id": 14,
 			"name": "Jacket Orange",
 			"description": "100% Cotton",
-			"image": "../Img/jacket-orange.jpeg",
+			"image": "../Img/jacket-orange.jpg",
 			"price": 76,
 			"amount": 7,
 			"type": "jacket"
@@ -133,7 +133,7 @@
 			"id": 15,
 			"name": "Jacket denim",
 			"description": "100% Denim",
-			"image": "../Img/jacket-denim.jpeg",
+			"image": "../Img/jacket-denim.jpg",
 			"price": 102,
 			"amount": 1,
 			"type": "jacket"
@@ -169,7 +169,7 @@
 			"id": 19,
 			"name": "Jeans Light Blue",
 			"description": "100% Denim",
-			"image": "../Img/jeans-light-blue.jpeg",
+			"image": "../Img/jeans-light-blue.jpg",
 			"price": 60,
 			"amount": 21,
 			"type": "jeans"

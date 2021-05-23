@@ -3,12 +3,14 @@ const itemsPerPage = document.querySelector('.perPage');
 const myCarousel = document.querySelector('#myCarousel');
 const sortByEl = document.querySelector('.sortBy');
 const filterItems = document.querySelector('.filterByType');
+const searchBar = document.querySelector('.SearchInput');
 
-console.log(filterItems);
+console.log(searchBar);
 
 let productsArray = [];
 let items = 5;
 let option;
+let searchItem;
 let filteredArray = [];
 
 const carousel = new bootstrap.Carousel(myCarousel, {
@@ -41,7 +43,7 @@ fetch('http://localhost:3000/products')
     console.log('item in func',items);
     for (let i=0; i<numberOfItems; i++) {
        productsList.innerHTML += `
-        <div class="card">
+        <div class="card m-4">
           <div class="text-center">
             <img src=${array[i].image} class="card-img-top" alt="...">
           </div>
@@ -88,26 +90,34 @@ filterItems.addEventListener('click', e => {
   showItems(items, filteredArray);
 })
 
-  const filterBy = (array, option) => {
-  
-    switch(option) {
-      case 'Hoodies':
-        filteredArray = array.filter(product => product.type === 'hoodie');
-        break;
-      case 'Jackets':
-        filteredArray = array.filter(product => product.type === 'jacket');
-        break;
-      case 'T-shirts':
-        filteredArray = array.filter(product => product.type === 't-shirt');
-        break;
-      case 'Sweaters':
-        filteredArray = array.filter(product => product.type === 'sweater');
-        break;
-      case 'Jeans':
-        filteredArray = array.filter(product => product.type === 'jeans');
-        break;
-      default:
-        return filteredArray;
-    }
-  }
+const filterBy = (array, option) => {
 
+  switch(option) {
+    case 'Hoodies':
+      filteredArray = array.filter(product => product.type === 'hoodie');
+      break;
+    case 'Jackets':
+      filteredArray = array.filter(product => product.type === 'jacket');
+      break;
+    case 'T-shirts':
+      filteredArray = array.filter(product => product.type === 't-shirt');
+      break;
+    case 'Sweaters':
+      filteredArray = array.filter(product => product.type === 'sweater');
+      break;
+    case 'Jeans':
+      filteredArray = array.filter(product => product.type === 'jeans');
+      break;
+    default:
+      return filteredArray;
+  }
+}
+
+
+searchBar.addEventListener('keyup', e =>{
+  searchItem = e.target.value;
+  searchProduct(productsArray, searchItem);
+  showItems(items, searchProduct(productsArray, searchItem));
+})
+
+const searchProduct = (array, value) => array.filter(item => item.name.toLowerCase().includes(value));

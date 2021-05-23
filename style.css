@@ -45,15 +45,22 @@ i {
     margin-bottom: 0 !important;
 }
 
+.productsList {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap:20px;
+    
+}
+
 .list-align {
     display: flex;
-    width:25%;
 }
 
 .container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap:20px;
+    margin-top: 20px;  
 }
 
 .card-body {
@@ -70,9 +77,6 @@ i {
 }
 
 .card-img-top {
-    width: auto;
-    max-width: 400px;
-    height: 450px;
     /* object-fit: contain; */
     justify-items: center;
 }
@@ -108,14 +112,35 @@ i {
     color: whitesmoke;
 }
 
+.items {
+    text-align: center;
+}
+
 .sortBy, .perPage {
     margin-top:5px;
     color:rgba(13, 41, 41, 0.6);
     font-weight: bold;
     background-color: rgba(245, 245, 245, 0.6);
     border: none;
+    display: inline-block;
     }
 
 .perPage {
     width: 55%;
 }
+
+@media (max-width: 500px) {
+    .productsList {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .list-align {
+        text-align: center;
+    }
+}
+
+
