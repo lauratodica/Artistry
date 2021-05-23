@@ -2,8 +2,14 @@ const productsList = document.querySelector('.productsList');
 const itemsPerPage = document.querySelector('.perPage');
 const myCarousel = document.querySelector('#myCarousel');
 const sortByEl = document.querySelector('.sortBy');
+const filterItems = document.querySelector('.filterByType');
+
+console.log(filterItems);
 
 let productsArray = [];
+let items = 5;
+let option;
+let filteredArray = [];
 
 const carousel = new bootstrap.Carousel(myCarousel, {
   interval: 2000,
@@ -12,46 +18,49 @@ const carousel = new bootstrap.Carousel(myCarousel, {
 
 
 
-fetch('http://localhost:3000/hoodies')
+fetch('http://localhost:3000/products')
   .then(response => response.json())
   .then(data => {
     productsArray = data;
-    showItems(items);
+    console.log(productsArray);
+    showItems(items, productsArray);
   });
 
-  let items = 5;
+  
   
   itemsPerPage.addEventListener('change', e => {
     items = Number(e.target.value);
     console.log(items);
-    showItems(items);
+    showItems(items, productsArray);
       })
 
-  const showItems = items => {
+  const showItems = (items, array) => {
     productsList.innerHTML = '';
+    let numberOfItems = (array.length < items) ? array.length : items;
+    console.log(array);
     console.log('item in func',items);
-    for (let i=0; i<items; i++) {
+    for (let i=0; i<numberOfItems; i++) {
        productsList.innerHTML += `
         <div class="card">
           <div class="text-center">
-            <img src=${productsArray[i].image} class="card-img-top" alt="...">
+            <img src=${array[i].image} class="card-img-top" alt="...">
           </div>
           <div class="card-body">
-            <h5 class="card-title">${productsArray[i].name}</h5>
-            <p class="card-text">${productsArray[i].price}</p>
-            ${productsArray[i].amount === 0 ? `<p>Out of stock!</p>` : `<p>Amount: ${productsArray[i].amount}</p>`}
+            <h5 class="card-title">${array[i].name}</h5>
+            <p class="card-text">${array[i].price}</p>
+            ${array[i].amount === 0 ? `<p>Out of stock!</p>` : `<p>Amount: ${array[i].amount}</p>`}
           </div>
         </div>
       `;
     }
   }
 
-  let option;
+
 
   sortByEl.addEventListener('change', e => {
     option = e.target.value;
     sortBy(productsArray, option);
-    showItems(items);
+    showItems(items, productsArray);
 })
 
 const sortBy = (productsArray, option) => {
@@ -70,3 +79,35 @@ const sortBy = (productsArray, option) => {
       return productsArray;
   }
 }
+
+let filtredItem;
+
+filterItems.addEventListener('click', e => {
+  filtredItem = e.target.textContent;
+  filterBy(productsArray, filtredItem);
+  showItems(items, filteredArray);
+})
+
+  const filterBy = (array, option) => {
+  
+    switch(option) {
+      case 'Hoodies':
+        filteredArray = array.filter(product => product.type === 'hoodie');
+        break;
+      case 'Jackets':
+        filteredArray = array.filter(product => product.type === 'jacket');
+        break;
+      case 'T-shirts':
+        filteredArray = array.filter(product => product.type === 't-shirt');
+        break;
+      case 'Sweaters':
+        filteredArray = array.filter(product => product.type === 'sweater');
+        break;
+      case 'Jeans':
+        filteredArray = array.filter(product => product.type === 'jeans');
+        break;
+      default:
+        return filteredArray;
+    }
+  }
+
