@@ -54,6 +54,7 @@ i {
 
 .list-align {
     display: flex;
+    cursor:pointer;
 }
 
 .container {

@@ -43,7 +43,7 @@
 			"id": 5,
 			"name": "Sweater e",
 			"description": "100% Cotton",
-			"image": "../Img/cl2.jpg",
+			"image": "../Img/cl5.jpg",
 			"price": 40,
 			"amount": 0,
 			"type": "sweater"
@@ -52,7 +52,7 @@
 			"id": 6,
 			"name": "Sweater f",
 			"description": "100% Cotton",
-			"image": "../Img/cl3.jpg",
+			"image": "../Img/cl6.jpg",
 			"price": 5,
 			"amount": 3,
 			"type": "sweater"
@@ -61,7 +61,7 @@
 			"id": 7,
 			"name": "Sweater g",
 			"description": "100% Cotton",
-			"image": "../Img/cl4.jpg",
+			"image": "../Img/cl7.jpg",
 			"price": 16,
 			"amount": 3,
 			"type": "sweater"
@@ -70,7 +70,7 @@
 			"id": 8,
 			"name": "Sweater h",
 			"description": "100% Cotton",
-			"image": "../Img/cl1.jpg",
+			"image": "../Img/cl8.jpg",
 			"price": 29,
 			"amount": 3,
 			"type": "sweater"
@@ -79,7 +79,7 @@
 			"id": 9,
 			"name": "Sweater i",
 			"description": "100% Cotton",
-			"image": "../Img/cl2.jpg",
+			"image": "../Img/cl9.jpg",
 			"price": 43,
 			"amount": 3,
 			"type": "sweater"
@@ -88,7 +88,7 @@
 			"id": 10,
 			"name": "Sweater j",
 			"description": "100% Cotton",
-			"image": "../Img/cl3.jpg",
+			"image": "../Img/cl10.jpg",
 			"price": 80,
 			"amount": 3,
 			"type": "sweater"
@@ -97,82 +97,109 @@
 			"id": 11,
 			"name": "Sweater k",
 			"description": "100% Cotton",
-			"image": "../Img/cl4.jpg",
+			"image": "../Img/cl11.jpg",
 			"price": 16,
 			"amount": 3,
 			"type": "sweater"
 		},
 		{
 			"id": 12,
-			"name": "Hoodie black",
+			"name": "Hoodie1",
 			"description": "100% Cotton",
-			"image": "../Img/hoodie-black.jpeg",
+			"image": "../Img/hoodie1.jpg",
 			"price": 16,
 			"amount": 1,
 			"type": "hoodie"
 		},
 		{
 			"id": 13,
-			"name": "Hoodie gray",
+			"name": "Hoodie2",
 			"description": "100% Cotton",
-			"image": "../Img/hooodie-gray.jpeg",
+			"image": "../Img/hoodie2.jpg",
 			"price": 33,
 			"amount": 2,
 			"type": "hoodie"
 		},
 		{
 			"id": 14,
-			"name": "Jacket Orange",
+			"name": "Jacket1",
 			"description": "100% Cotton",
-			"image": "../Img/jacket-orange.jpg",
+			"image": "../Img/jacket1.jpg",
 			"price": 76,
 			"amount": 7,
 			"type": "jacket"
 		},
 		{
 			"id": 15,
-			"name": "Jacket denim",
+			"name": "Jacket2",
 			"description": "100% Denim",
-			"image": "../Img/jacket-denim.jpg",
+			"image": "../Img/jacket2.jpg",
 			"price": 102,
 			"amount": 1,
 			"type": "jacket"
 		},
 		{
 			"id": 16,
-			"name": "T-shirt white",
+			"name": "T-shirt1",
 			"description": "100% Cotton",
-			"image": "../Img/t-shirt-white.jpeg",
+			"image": "../Img/t-shirt1.jpg",
 			"price": 5,
 			"amount": 20,
 			"type": "t-shirt"
 		},
 		{
 			"id": 17,
-			"name": "T-shirt Red",
+			"name": "T-shirt2",
 			"description": "100% Cotton",
-			"image": "../Img/t-shirt-red.jpeg",
+			"image": "../Img/t-shirt2.jpg",
 			"price": 10,
 			"amount": 12,
 			"type": "t-shirt"
 		},
 		{
 			"id": 18,
-			"name": "Jeans Rebel",
+			"name": "Jeans1",
 			"description": "100% Denim",
-			"image": "../Img/jeans-kiss.jpeg",
+			"image": "../Img/jeans1.jpg",
 			"price": 14,
 			"amount": 90,
 			"type": "jeans"
 		},
 		{
 			"id": 19,
-			"name": "Jeans Light Blue",
+			"name": "Jeans2",
 			"description": "100% Denim",
-			"image": "../Img/jeans-light-blue.jpg",
+			"image": "../Img/jeans2.jpg",
 			"price": 60,
 			"amount": 21,
 			"type": "jeans"
+		},
+		{
+			"id": 20,
+			"name": "Hoodie3",
+			"description": "100% Cotton",
+			"image": "../Img/hoodie3.jpg",
+			"price": 33,
+			"amount": 3,
+			"type": "hoodie"
+		},
+		{
+			"id": 21,
+			"name": "Hoodie4",
+			"description": "100% Cotton",
+			"image": "../Img/hoodie4.jpg",
+			"price": 35,
+			"amount": 5,
+			"type": "hoodie"
+		},
+		{
+			"id": 22,
+			"name": "Jacket3",
+			"description": "100% Denim",
+			"image": "../Img/jacket3.jpg",
+			"price": 150,
+			"amount": 1,
+			"type": "jacket"
 		}
 	]
 }
