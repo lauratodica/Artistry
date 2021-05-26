@@ -1,6 +1,5 @@
 body {
     background-color: rgba(13, 41, 41, 0.7);
-    margin-bottom: 50px;
 }
 
 i {
@@ -30,10 +29,9 @@ i {
 }
 
 .pages {
-    margin: 0 auto;
-    width: 50%;
+    margin:0 2em;
     display: flex;
-    justify-content: space-around;
+    
 }
 
 .pagination {
@@ -54,7 +52,7 @@ i {
 
 .list-align {
     display: flex;
-    cursor:pointer;
+    
 }
 
 .container {
@@ -66,9 +64,10 @@ i {
 
 .card-body {
     text-align: center;
-    background-color: rgba(13, 41, 41, 0.7);
+    background-color: rgb(65 82 82);
     color: rgba(245, 245, 245, 0.7);
-    border: none;
+    border: solid 1px #555;
+    box-shadow: 10px 5px 5px rgb(0,0,0,0.6);
 
 }
 
@@ -80,6 +79,7 @@ i {
 .card-img-top {
     /* object-fit: contain; */
     justify-items: center;
+    box-shadow: 10px 5px 5px rgb(0,0,0,0.6);
 }
 
 .dropdown {
@@ -130,7 +130,57 @@ i {
     width: 55%;
 }
 
-@media (max-width: 500px) {
+.navbar-brand {
+    margin-right: 2rem !important;
+    margin-left: 2rem !important;
+}
+
+.filterByType {
+    cursor:pointer;
+}
+
+.listOfProducts {
+    cursor:pointer;
+}
+
+.activeLink {
+    text-decoration: underline;
+}
+
+.footerContact {
+    display: flex;
+    background:rgb(13, 41, 41);
+    margin-bottom:0;
+    color: rgba(245, 245, 245, 0.637);
+    justify-content: space-between;
+    border-top:2px solid #B18448;
+    padding: 10px 20px;
+    font-family: 'Cinzel', serif;
+    font-weight: 800;
+}
+
+.infoDiv {
+    display: flex;
+    padding: 5px 0;
+}
+
+.socialMediaInformation {
+    margin-top: 30px;
+}
+
+.titleInfo {
+    margin-left: 10px;
+}
+
+.socialMedia, .contactIcon {
+    cursor: pointer;
+}
+
+.paginationColor {
+    background-color: rgba(245, 245, 245, 0.2);
+}
+
+@media (max-width: 650px) {
     .productsList {
         grid-template-columns: 1fr;
     }
@@ -142,6 +192,8 @@ i {
     .list-align {
         text-align: center;
     }
+    .searchBarProducts {
+        justify-content: center !important;
+    }
 }
-
 

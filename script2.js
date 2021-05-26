@@ -3,6 +3,9 @@ const itemsPerPage = document.querySelector('.perPage');
 const sortByEl = document.querySelector('.sortBy');
 const filterItems = document.querySelector('.filterByType');
 const searchBar = document.querySelector('.searchInput')
+const selectPageNumber = document.querySelector('.pagination')
+const allProducts = document.querySelector('.listOfProducts');
+
 
 
 let items = 5;
@@ -11,6 +14,9 @@ let option;
 let filteredArray = [];
 let filtredItem;
 let searchItem;
+let numberOfPage;
+let pageArray = [];
+let searchArray = [];
 
 fetch('http://localhost:3000/products')
     .then(response => response.json())
@@ -18,6 +24,7 @@ fetch('http://localhost:3000/products')
         productsArray = data;
         console.log('productsArray', productsArray);
         showItems(items, productsArray);
+        createPagination(changeArray());
     });
 
 const showItems = (items, array) => {
@@ -41,8 +48,8 @@ const showItems = (items, array) => {
 
 itemsPerPage.addEventListener('change', e => {
     items = Number(e.target.value);
-    console.log('itemsPerPage', items);
     showItems(items, productsArray);
+    createPagination(changeArray('productsPerPage'));
 })
 
 
@@ -72,7 +79,14 @@ filterItems.addEventListener('click', e => {
     filtredItem = e.target.textContent;
     filterBy(filtredItem, productsArray);
     showItems(items, filteredArray);
+    createPagination(changeArray('filter'));
+    let oldActive = document.querySelector('.activeLink');
+    if(oldActive) {
+        oldActive.classList.remove('activeLink');
+    }
+    e.target.classList.add('activeLink');
 })
+
 
 const filterBy = (option, array) => {
     switch(option) {
@@ -96,10 +110,79 @@ const filterBy = (option, array) => {
     }
 }
 
+allProducts.addEventListener('click', () => {
+    showItems(items, productsArray);
+    createPagination(productsArray);
+})
+
 searchBar.addEventListener('keyup', e => {
     searchItem = e.target.value;
     searchProduct(searchItem, productsArray);
     showItems(items, searchProduct(searchItem, productsArray))
+    createPagination(changeArray('search'));
 })
 
-const searchProduct = (value, array) => array.filter(product => product.name.toLowerCase().includes(value));
+const searchProduct = (value, array) => searchArray = array.filter(product => product.name.toLowerCase().includes(value));
+
+
+selectPageNumber.addEventListener('click', e => {
+    numberOfPage = Number(e.target.textContent);
+    choosePageNumber(items);
+    let oldActive = document.querySelector('.paginationColor');
+    if(oldActive) {
+        oldActive.classList.remove('paginationColor');
+    }
+    e.target.classList.add('paginationColor');
+})
+
+const choosePageNumber = (products) => {
+    fetch(`http://localhost:3000/products?_page=${numberOfPage}&_limit=${products}`)
+        .then(response => response.json())
+        .then(data => {
+            showItems(items, data);
+        });
+}
+
+
+const createPagination = (array) => {
+    console.log('array in createPagination', array);
+    selectPageNumber.innerHTML = '';
+    let pages = Math.ceil(array.length/items);
+    for(let i=1; i <= pages; i++) {
+        selectPageNumber.innerHTML += `
+            <li class="page-item"><a class="page-link" href="#laura">${i}</a></li>
+        `
+    }
+}
+
+const changeArray = (option) => {
+    switch(option) {
+        case 'filter': 
+            return filteredArray;
+        case 'search':
+            return searchArray;
+        case 'productsPerPage':
+            return (filteredArray.length === 0) ? productsArray : filteredArray;
+        default:
+            console.log('change array default');
+            return productsArray;
+            
+    }
+}
+
+// hover doar pe ul, nu pe tot divul                DONE!!
+
+// folosit url-uri pt poze                          DONE!!
+
+// scapa de colturile de la borderele de pe card    DONE!!
+
+// centreaza search barul pt ecrane mai mici        DONE!!
+
+// footer cu contact form
+
+// underline la filter in functie de selectie
+
+// highlight la numarul paginii in functie de selectie
+
+
+// AM ADAUGAT la lista de produse un event listener care sa aduca toate produsele daca dai click pe PRODUCTS
