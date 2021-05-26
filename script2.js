@@ -170,19 +170,3 @@ const changeArray = (option) => {
     }
 }
 
-// hover doar pe ul, nu pe tot divul                DONE!!
-
-// folosit url-uri pt poze                          DONE!!
-
-// scapa de colturile de la borderele de pe card    DONE!!
-
-// centreaza search barul pt ecrane mai mici        DONE!!
-
-// footer cu contact form
-
-// underline la filter in functie de selectie
-
-// highlight la numarul paginii in functie de selectie
-
-
-// AM ADAUGAT la lista de produse un event listener care sa aduca toate produsele daca dai click pe PRODUCTS
