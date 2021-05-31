@@ -7,7 +7,7 @@
 			"id": 1,
 			"name": "Sweater a",
 			"description": "100% Wool",
-			"image": "https://i.imgur.com/sgzm5VC.jpg",
+			"image": "https://i.imgur.com/b28LccV.jpg",
 			"price": 20,
 			"amount": 0,
 			"type": "sweater"
@@ -16,7 +16,7 @@
 			"id": 2,
 			"name": "Sweater b",
 			"description": "100% Cotton",
-			"image": "https://i.imgur.com/i6gCCqZ.jpg",
+			"image": "https://i.imgur.com/hN9mOjA.jpg",
 			"price": 10,
 			"amount": 2,
 			"type": "sweater"
@@ -25,7 +25,7 @@
 			"id": 3,
 			"name": "Sweater c",
 			"description": "100% Cotton",
-			"image": "https://i.imgur.com/XtUJoce.jpg",
+			"image": "https://i.imgur.com/eqFL8sR.jpg",
 			"price": 15,
 			"amount": 5,
 			"type": "sweater"
@@ -34,7 +34,7 @@
 			"id": 4,
 			"name": "Sweater d",
 			"description": "100% Cotton",
-			"image": "https://i.imgur.com/eCWCzVf.jpg",
+			"image": "https://i.imgur.com/sNHFn0x.jpg",
 			"price": 30,
 			"amount": 8,
 			"type": "sweater"
@@ -43,7 +43,7 @@
 			"id": 5,
 			"name": "Sweater e",
 			"description": "100% Cotton",
-			"image": "https://i.imgur.com/tBPa2yb.jpg",
+			"image": "https://i.imgur.com/RpGZ1Ph.jpg",
 			"price": 40,
 			"amount": 0,
 			"type": "sweater"
@@ -52,7 +52,7 @@
 			"id": 6,
 			"name": "Sweater f",
 			"description": "100% Cotton",
-			"image": "https://i.imgur.com/o0qiblY.jpg",
+			"image": "https://i.imgur.com/ccmBnVd.jpg",
 			"price": 5,
 			"amount": 3,
 			"type": "sweater"
@@ -61,7 +61,7 @@
 			"id": 7,
 			"name": "Sweater g",
 			"description": "100% Cotton",
-			"image": "https://i.imgur.com/IFUKcMI.jpg",
+			"image": "https://i.imgur.com/6QeTrVR.jpg",
 			"price": 16,
 			"amount": 3,
 			"type": "sweater"
@@ -70,7 +70,7 @@
 			"id": 8,
 			"name": "Sweater h",
 			"description": "100% Cotton",
-			"image": "https://i.imgur.com/gqDTqGc.jpg",
+			"image": "https://i.imgur.com/6jR32V9.jpg",
 			"price": 29,
 			"amount": 3,
 			"type": "sweater"
@@ -79,7 +79,7 @@
 			"id": 9,
 			"name": "Sweater i",
 			"description": "100% Cotton",
-			"image": "https://i.imgur.com/xAKHjKW.jpg",
+			"image": "https://i.imgur.com/6cuYPge.jpg",
 			"price": 43,
 			"amount": 3,
 			"type": "sweater"
@@ -88,7 +88,7 @@
 			"id": 10,
 			"name": "Sweater j",
 			"description": "100% Cotton",
-			"image": "https://i.imgur.com/HFHYvOK.jpg",
+			"image": "https://i.imgur.com/vmCNkdP.jpg",
 			"price": 80,
 			"amount": 3,
 			"type": "sweater"
@@ -97,7 +97,7 @@
 			"id": 11,
 			"name": "Sweater k",
 			"description": "100% Cotton",
-			"image": "https://i.imgur.com/BI4fdBc.jpg",
+			"image": "https://i.imgur.com/jiFvnIL.jpg",
 			"price": 16,
 			"amount": 3,
 			"type": "sweater"
@@ -106,7 +106,7 @@
 			"id": 12,
 			"name": "Hoodie1",
 			"description": "100% Cotton",
-			"image": "https://i.imgur.com/drPrwXL.jpg",
+			"image": "https://i.imgur.com/agUOW2d.jpg",
 			"price": 16,
 			"amount": 1,
 			"type": "hoodie"
@@ -115,7 +115,7 @@
 			"id": 13,
 			"name": "Hoodie2",
 			"description": "100% Cotton",
-			"image": "https://i.imgur.com/oepf7ib.jpg",
+			"image": "https://i.imgur.com/A14qKIa.jpg",
 			"price": 33,
 			"amount": 2,
 			"type": "hoodie"
@@ -124,7 +124,7 @@
 			"id": 14,
 			"name": "Jacket1",
 			"description": "100% Cotton",
-			"image": "https://i.imgur.com/ZTumR5w.jpg",
+			"image": "https://i.imgur.com/mlcatKT.jpg",
 			"price": 76,
 			"amount": 7,
 			"type": "jacket"
@@ -133,7 +133,7 @@
 			"id": 15,
 			"name": "Jacket2",
 			"description": "100% Denim",
-			"image": "https://i.imgur.com/8rvMgCE.jpg",
+			"image": "https://i.imgur.com/DFOFhY0.jpg",
 			"price": 102,
 			"amount": 1,
 			"type": "jacket"
@@ -142,7 +142,7 @@
 			"id": 16,
 			"name": "T-shirt1",
 			"description": "100% Cotton",
-			"image": "https://i.imgur.com/yGUVqta.jpg",
+			"image": "https://i.imgur.com/LZ3ckYr.jpg",
 			"price": 5,
 			"amount": 20,
 			"type": "t-shirt"
@@ -151,7 +151,7 @@
 			"id": 17,
 			"name": "T-shirt2",
 			"description": "100% Cotton",
-			"image": "https://i.imgur.com/UIJmENO.jpg",
+			"image": "https://i.imgur.com/fwEoqjD.jpg",
 			"price": 10,
 			"amount": 12,
 			"type": "t-shirt"
@@ -160,7 +160,7 @@
 			"id": 18,
 			"name": "Jeans1",
 			"description": "100% Denim",
-			"image": "https://i.imgur.com/z7IclIz.jpg",
+			"image": "https://i.imgur.com/HFSJFaB.jpg",
 			"price": 14,
 			"amount": 90,
 			"type": "jeans"
@@ -169,7 +169,7 @@
 			"id": 19,
 			"name": "Jeans2",
 			"description": "100% Denim",
-			"image": "https://i.imgur.com/LVswosw.jpg",
+			"image": "https://i.imgur.com/TmLO8We.jpg",
 			"price": 60,
 			"amount": 21,
 			"type": "jeans"
@@ -178,7 +178,7 @@
 			"id": 20,
 			"name": "Hoodie3",
 			"description": "100% Cotton",
-			"image": "https://i.imgur.com/NWWDU6N.jpg",
+			"image": "https://i.imgur.com/xk9Mybu.jpg",
 			"price": 33,
 			"amount": 3,
 			"type": "hoodie"
@@ -187,7 +187,7 @@
 			"id": 21,
 			"name": "Hoodie4",
 			"description": "100% Cotton",
-			"image": "https://i.imgur.com/KmKxOBV.jpg",
+			"image": "https://i.imgur.com/DgLg1qg.jpg",
 			"price": 35,
 			"amount": 5,
 			"type": "hoodie"
@@ -196,7 +196,7 @@
 			"id": 22,
 			"name": "Jacket3",
 			"description": "100% Denim",
-			"image": "https://i.imgur.com/zZnMCtz.jpg",
+			"image": "https://i.imgur.com/545C6Uk.jpg",
 			"price": 150,
 			"amount": 1,
 			"type": "jacket"
