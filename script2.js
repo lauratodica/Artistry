@@ -18,10 +18,10 @@ let numberOfPage;
 let pageArray = [];
 let searchArray = [];
 
-fetch('http://localhost:3000/products')
+fetch('http://localhost:8080/db/db.json')
     .then(response => response.json())
     .then(data => {
-        productsArray = data;
+        productsArray = data.products;
         console.log('productsArray', productsArray);
         showItems(items, productsArray);
         createPagination(changeArray());
@@ -136,7 +136,7 @@ selectPageNumber.addEventListener('click', e => {
 })
 
 const choosePageNumber = (products) => {
-    fetch(`http://localhost:3000/products?_page=${numberOfPage}&_limit=${products}`)
+    fetch(`https://lauratodica.github.io/Artristy/products?_page=${numberOfPage}&_limit=${products}`)
         .then(response => response.json())
         .then(data => {
             showItems(items, data);
